@@ -1,3 +1,6 @@
+import '@/app/ui/global.css'; //  para añadir css a mi web, es el top level
+import { inter, lusitana } from '@/app/ui/fonts';
+
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +8,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
   );
 }
